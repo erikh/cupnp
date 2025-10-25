@@ -1,0 +1,14 @@
+[package]
+name = "cupnp"
+version = "0.1.0"
+edition = "2024"
+description = "cupnp is a CLI tool to manage uPnP trivially"
+authors = ["Erik Hollensbe <git@hollensbe.org>"]
+license = "MIT"
+homepage = "https://github.com/erikh/cupnp"
+repository = "https://github.com/erikh/cupnp"
+
+[dependencies]
+easy-upnp = "^0"
+anyhow = "^1"
+clap = { version = "^4.5", features = [ "derive" ] }
