@@ -59,7 +59,7 @@ After=network-online.target
 [Service]
 Type=oneshot
 ExecStart=cupnp expose 8000
-ExecStop =cupnp delete 8000
+ExecStop=cupnp delete 8000
 ```
 
 ## License
