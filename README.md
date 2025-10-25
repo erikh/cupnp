@@ -48,7 +48,7 @@ System:
 
 ## systemd Timer
 
-You can create systemd files to keep this port forward up until you tell it to turn off. Should work just fine in `$HOME/.config/systemd/user` if that is desired. You will want to create a pair for each port forward.
+You can create systemd files to keep this port forward up until you tell it to turn off. Should work just fine in `$HOME/.config/systemd/user` if that is desired. You will want to create a pair for each port forward, and be sure to `systemctl start` the timer file, not the service.
 
 `.timer` file:
 
