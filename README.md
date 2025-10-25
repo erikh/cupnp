@@ -30,6 +30,22 @@ $ cupnp delete 8000
 $ cupnp delete 8000 udp
 ```
 
+## cron
+
+Note that this will never remove the port forward, but you can add this line to the system (`/etc/crontab`) or user (`crontab -e`) crontab to keep your ports open:
+
+User:
+
+```cron
+*/30 * * * * cupnp enable 8000
+```
+
+System:
+
+```cron
+*/30 * * * * nobody cupnp enable 8000
+```
+
 ## systemd Timer
 
 You can create systemd files to keep this port forward up until you tell it to turn off. Should work just fine in `$HOME/.config/systemd/user` if that is desired. You will want to create a pair for each port forward.
