@@ -58,7 +58,6 @@ Description=cupnp port forward
 After=network-online.target
 
 [Timer]
-OnStartupSec=30min
 OnUnitInactiveSec=30min
 
 [Install]
